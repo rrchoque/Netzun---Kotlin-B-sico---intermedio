@@ -6,4 +6,8 @@ fun main() {
     // Constante
     val PI:Double = 3.14
     println(PI)
+
+    // Inferencia de tipos
+    var saludos = "Hola mundo!"
+    println(saludos)
 }
