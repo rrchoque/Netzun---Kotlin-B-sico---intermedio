@@ -28,5 +28,18 @@ fun main() {
     println("Módulo: ${numero1 % numero2}")
 
     // Nullables en kotlin
-    
+    var nombreNulo:String?
+    nombreNulo = null
+    var longitud: Int? = nombreNulo?.length
+    println("Longitud : $longitud")
+
+    // Elvis Operator
+    println("Hola $nombreNulo tu nombre tiene $longitud letras")
+
+    var nombreNulo2:String?
+    nombreNulo2 = null ?: "Usuario"
+    var longitud2: Int? = nombreNulo2?.length ?: 0
+    println("Hola $nombreNulo2 tu nombre tiene $longitud2 letras")
+
+
 }
